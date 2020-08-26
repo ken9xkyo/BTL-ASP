@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 60px;
+    background-color: #D32F2F;
+}
+
+.logo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 60px;
+}
+
+.under-header {
+    padding-top: 7px;
+}
+
+.header-right .btn-group {
+    padding: 0Px;
+    background-color: #D32F2F;
+}
+
+.header-right a.btn.btn-default {
+    background-color: #D32F2F;
+    color: White;
+    height: 60px;
+    border: 0px;
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+    .header-right a.btn.btn-default:hover {
+        background-color: white;
+        color: #D32F2F;
+    }
+
+.under-header {
+    background-color: white;
+    height: 35px;
+}
+
+..under-header a {
+    text-decoration-style: none;
+    color: black;
+}
+
+
+.fooder i.far.fa-envelope {
+    padding: 10px;
+    width: 50px;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.fooder i.fas.fa-mobile-alt {
+    padding: 10px;
+    width: 50px;
+    font-size: 30px;
+    background-color: #3B5998;
+    color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.fooder i.fas.fa-moon {
+    padding: 10px;
+    width: 50px;
+    font-size: 30px;
+    background-color: #7B1FA2;
+    color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.fooder .icont {
+    height: 60px;
+    margin: 10px;
+}
+
+.fooder a:hover i.far.fa-envelope {
+    margin-top: -2px;
+    margin-bottom: +2px;
+}
+
+.fooder a:hover i.fas.fa-mobile-alt {
+    margin-top: -2px;
+    margin-bottom: +2px;
+}
+
+.fooder a:hover i.fas.fa-moon {
+    margin-top: -2px;
+    margin-bottom: +2px;
+}
+
+.fooder a {
+    text-decoration: none;
+}
+
+.fooder .cot1 a {
+    color: red;
+}
+
+.fooder .cot2 a {
+    color: #3B5998;
+}
+
+.fooder .cot3 a {
+    color: #7B1FA2;
+}
+
+.cottrai {
+    background-color :aqua;
+    height : 200px;
+}
+
+.cotphai {
+    background-color: lightpink;
+    height: 200px;
+}

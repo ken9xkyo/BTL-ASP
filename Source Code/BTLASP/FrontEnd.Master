@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontEnd.master.cs" Inherits="BTLASP.FrontEnd" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Example </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="1.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap.css">
+    <link rel="stylesheet" href="BTL.css">
+    <script src="https://kit.fontawesome.com/e7630c898f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 	 -->
+
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-6 col-lg-6">
+                    <div class="logo">
+                        <img src="images/logo_vi_VN.png" alt="" width="234px" height="86px" class="img-responsive">
+                    </div>
+                    <!-- xong logo -->
+                </div>
+
+                <div class="col-xs-12 col-sm-9 col-md-6 col-lg-6">
+                    <div class="header-right">
+                        <div class="btn-group">
+                            <a class="btn btn-default" href="#" role="button">
+                                <img src="images/covn.png" height="20px" alt="">
+                            </a>
+                            <a class="btn btn-default" href="#" role="button">VND</a>
+                            <a class="btn btn-default" href="#" role="button">Trợ Giúp</a>
+                            <a class="btn btn-default" href="#" role="button">Đặt phòng của bạn</a>
+                            <a class="btn btn-default" href="#" role="button">Quang</a>
+
+                        </div>
+                    </div>
+                    <!-- xong header right -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- xong header -->
+
+    <div class="under-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <a href="#" target="_blank">Đăng thông tin nơi lưu trú của bạn</a>
+                </div>
+
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <a href="#" target="_blank">Hotels.com™ Rewards</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="noidung">
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+
+    <div class="fooder">
+        <div class="container">
+            <div class="row text-center">
+                <h4>Chọn một trong các hình thức sau để mở khóa Giá Bí mật và thanh toán giá thấp hơn tại một số nơi lưu trú.</h4>
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="cot1">
+                        <a href="#">
+                            <div class="icont">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>Đăng ký nhận thông tin khuyến mãi mới nhất của chúng tôi</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="cot2">
+                        <a href="#">
+                            <div class="icont">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>App Hotels.com</h3>
+                            <p>Tải app và đặt phòng mọi lúc, mọi nơi</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="cot3">
+                        <a href="#">
+                            <div class="icont">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <img class="hr-logo" alt="Hotels.com™ Rewards" src="https://a.cdn-hotels.com/uswest2/da/assets/s/63.0.10347/images/brands/hcom/hcomrewards/logos/rewards-logo-purple-no-moon-vi_VN.png" height="16" style="margin-top: 13px">
+                            <p style="padding-top: 10px;">Tham gia ngay! Tích lũy 10 tem, nhận 1 đêm thưởng*</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <ul style="list-style: none">
+                    <li>Điểm đến hàng đầu</li>
+                    <li>Quốc gia & vùng nổi bật</li>
+                    <li>Hỗ trợ & Câu hỏi thường gặp</li>
+                    <li>Dành cho nhà cung cấp, chi nhánh và giới truyền thông</li>
+                    <li>Điều khoản người dùng & Bảo mật</li>
+                    <li>Phản hồi về trang web</li>
+                    <li>Thông tin về chúng tôi</li>
+                    <li>Đăng thông tin nơi lưu trú của bạn</li>
+                    <li>Nghề nghiệp</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
