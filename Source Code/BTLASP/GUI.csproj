@@ -70,8 +70,14 @@
     <Content Include="BTL.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="images\covn.png" />
+    <Content Include="images\dautich.png" />
+    <Content Include="images\icon-dongho.png" />
+    <Content Include="images\icon-wifi.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo_vi_VN.png" />
+    <Content Include="images\mattrang.png" />
+    <Content Include="images\mota-phong.png" />
+    <Content Include="images\tichto.png" />
     <Content Include="KetQuaTimKiem.ascx" />
     <Content Include="TimKiemForm.ascx" />
     <Content Include="vendor\bootstrap.css" />
@@ -81,7 +87,9 @@
     <Content Include="Web.config" />
     <Content Include="TimKiem.aspx" />
     <Content Include="ThemKhachSan.aspx" />
-    <Content Include="SuaKhachSan.aspx" />
+    <Content Include="PhongKhachSan.aspx" />
+    <Content Include="QuanLyPhongKS.aspx" />
+    <Content Include="ThemPhongAdmin.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FrontEnd.Master.cs">
@@ -127,12 +135,26 @@
     <Compile Include="ThemKhachSan.aspx.designer.cs">
       <DependentUpon>ThemKhachSan.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SuaKhachSan.aspx.cs">
-      <DependentUpon>SuaKhachSan.aspx</DependentUpon>
+    <Compile Include="PhongKhachSan.aspx.cs">
+      <DependentUpon>PhongKhachSan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SuaKhachSan.aspx.designer.cs">
-      <DependentUpon>SuaKhachSan.aspx</DependentUpon>
+    <Compile Include="PhongKhachSan.aspx.designer.cs">
+      <DependentUpon>PhongKhachSan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyPhongKS.aspx.cs">
+      <DependentUpon>QuanLyPhongKS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhongKS.aspx.designer.cs">
+      <DependentUpon>QuanLyPhongKS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemPhongAdmin.aspx.cs">
+      <DependentUpon>ThemPhongAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemPhongAdmin.aspx.designer.cs">
+      <DependentUpon>ThemPhongAdmin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

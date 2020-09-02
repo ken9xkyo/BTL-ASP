@@ -9,6 +9,9 @@
                     <asp:HyperLink ID="HyperLink1" NavigateUrl="~/ThemKhachSan.aspx" runat="server">Thêm Khách Sạn</asp:HyperLink>
                     <br />
                     <asp:HyperLink ID="HyperLink2" runat="server">Sửa Khách Sạn</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/QuanLyPhongKS.aspx">Quản Lý Phòng</asp:HyperLink>
+
                 </div>
                 <div class="col-xs-10 ">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

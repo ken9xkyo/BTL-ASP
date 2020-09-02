@@ -10,3 +10,15 @@ C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.
 C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.csproj.CopyComplete
 C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.dll
 C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.pdb
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\bin\Debug\DTOs.dll.config
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\bin\Debug\DTOs.dll
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\bin\Debug\DTOs.pdb
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\bin\Debug\EntityFramework.dll
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\bin\Debug\EntityFramework.xml
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\obj\Debug\DTOs.csprojAssemblyReference.cache
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\obj\Debug\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\obj\Debug\DTOs.csproj.CopyComplete
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\obj\Debug\DTOs.dll
+C:\Users\The Manh\Documents\GitHub\BTLASP\Source Code\DTOs\obj\Debug\DTOs.pdb

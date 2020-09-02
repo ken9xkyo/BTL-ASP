@@ -132,3 +132,53 @@
     padding:20px;
     border:2px;
 }
+/*css cua phong*/
+.auto-style1 {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.auto-style5 {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.tieude {
+    background-color: burlywood;
+}
+
+.auto-style6 {
+    height: 34px;
+    margin-top: 0px;
+}
+
+.tieudephong {
+    color: green;
+    width: 100%;
+    display: flex;
+}
+
+.phai {
+    float: right;
+    text-align: right;
+    width: 20%
+}
+
+.trai {
+    float: left;
+    width: 80%;
+}
+
+.auto-style7 {
+    margin-right: 53px;
+}
+
+.auto-style8 {
+    margin-right: 21px;
+}
+
+.tieudecot1 {
+    color: forestgreen;
+    text-align: center;
+}
+/*het css cua phong*/
