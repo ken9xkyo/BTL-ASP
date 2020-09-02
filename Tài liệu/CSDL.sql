@@ -12,6 +12,14 @@ create table TinhThanh(
 	MaTinhThanh int IDENTITY(1,1) NOT NULL primary key,
 	TenTinhThanh nvarchar(50)
 )
+
+create table DiaDanh(
+	MaDiaDanh int IDENTITY(1,1) NOT NULL primary key,
+	TenDiaDanh nvarchar(50),
+	MaTinhThanh int,
+	foreign key (MaTinhThanh) references TinhThanh(MaTinhThanh),
+
+)
 create table KhuVuc(
 	MaKhuVuc int IDENTITY(1,1) NOT NULL primary key,
 	TenKhuVuc nvarchar(50),
@@ -61,18 +69,7 @@ create table DanhSachDichVu(
 	foreign key (MaKhachSan) references KhachSan(MaKhachSan),
 	foreign key (MaTienNghi) references TienNghi(MaTienNghi)
 )
-create table DiaDanh(
-	MaDiaDanh int IDENTITY(1,1) NOT NULL primary key,
-	TenDiaDanh nvarchar(50)
-)
 
-create table DanhSachDiaDanh(
-	MaDiaDanh int ,
-	MaKhachSan int,
-	primary key (MaKhachSan,MaDiaDanh),
-	foreign key (MaKhachSan) references khachsan(MaKhachSan),
-	foreign key (MaDiaDanh) references diadanh(MaDiaDanh),
-)
 
 create table HinhAnh(
 	MaHinhAnh int IDENTITY(1,1) NOT NULL primary key,
