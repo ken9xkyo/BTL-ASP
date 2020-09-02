@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div id="login">
+                    <div id="TimKiem" >
                         <uc1:TimKiemForm ID="TimKiem1" runat="server" />
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                     <%--bên phải--%>
                     <div class="cotphai">
-                        abc
+                        
                     </div>
                 </div>
             </div>

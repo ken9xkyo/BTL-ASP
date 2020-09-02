@@ -72,6 +72,7 @@
     <Content Include="images\covn.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo_vi_VN.png" />
+    <Content Include="KetQuaTimKiem.ascx" />
     <Content Include="TimKiemForm.ascx" />
     <Content Include="vendor\bootstrap.css" />
     <Content Include="vendor\bootstrap.js" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="FrontEnd.Master.designer.cs">
       <DependentUpon>FrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="KetQuaTimKiem.ascx.cs">
+      <DependentUpon>KetQuaTimKiem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KetQuaTimKiem.ascx.designer.cs">
+      <DependentUpon>KetQuaTimKiem.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimKiemForm.ascx.cs">
