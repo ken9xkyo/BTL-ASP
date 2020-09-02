@@ -116,3 +116,10 @@ C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\obj\Debug\BTL
 C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\obj\Debug\BTLASP.csproj.CopyComplete
 C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\obj\Debug\BTLASP.dll
 C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\obj\Debug\BTLASP.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\bin\BULs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\bin\DTOs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\bin\BULs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\bin\DTOs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\bin\DTOs.dll.config
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BTLASP\bin\EntityFramework.xml

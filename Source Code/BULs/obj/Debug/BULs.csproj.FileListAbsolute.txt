@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\BULs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\BULs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\DALs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\DTOs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\DALs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\DTOs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\DTOs.dll.config
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\obj\Debug\BULs.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\obj\Debug\BULs.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\obj\Debug\BULs.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\obj\Debug\BULs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\BULs\obj\Debug\BULs.pdb

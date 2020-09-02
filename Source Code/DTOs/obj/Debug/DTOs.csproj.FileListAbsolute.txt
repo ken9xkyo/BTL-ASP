@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\bin\Debug\DTOs.dll.config
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\bin\Debug\DTOs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\bin\Debug\DTOs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DTOs\obj\Debug\DTOs.pdb

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="25209489a89e47929be2b4425051fefc" Name="Diagram1">
+        <EntityTypeShape EntityType="QLSVModel.DanhGia" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.DiaDanh" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.dichvu" Width="1.5" PointX="7.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.hoadon" Width="1.5" PointX="7.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.khachhang" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.khachsan" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.khuvuc" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.phong" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLSVModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="QLSVModel.FK__DanhGia__idkh__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSVModel.FK__DanhGia__idks__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSVModel.FK__hoadon__idkh__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSVModel.FK__hoadon__maphong__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSVModel.FK__khachsan__makhuv__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSVModel.FK__phong__idks__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSVModel.DanhSachDiaDanh" ManuallyRouted="false" />
+        <AssociationConnector Association="QLSVModel.DanhSachDichVu" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

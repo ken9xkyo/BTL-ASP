@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\bin\Debug\DALs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\bin\Debug\DALs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\bin\Debug\DTOs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\bin\Debug\DTOs.pdb
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\bin\Debug\DTOs.dll.config
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\obj\Debug\DALs.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\obj\Debug\DALs.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\obj\Debug\DALs.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\obj\Debug\DALs.dll
+C:\Users\Administrator\Documents\GitHub\BTL-ASP\Source Code\DALs\obj\Debug\DALs.pdb

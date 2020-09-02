@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLSVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DanhGia">
+    <Key>
+      <PropertyRef Name="idDanhGia" />
+    </Key>
+    <Property Name="idDanhGia" Type="int" Nullable="false" />
+    <Property Name="idkh" Type="int" />
+    <Property Name="idks" Type="int" />
+    <Property Name="diem" Type="int" />
+  </EntityType>
+  <EntityType Name="DanhSachDiaDanh">
+    <Key>
+      <PropertyRef Name="idks" />
+      <PropertyRef Name="idDiaDanh" />
+    </Key>
+    <Property Name="idks" Type="int" Nullable="false" />
+    <Property Name="idDiaDanh" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DanhSachDichVu">
+    <Key>
+      <PropertyRef Name="maphong" />
+      <PropertyRef Name="iddv" />
+    </Key>
+    <Property Name="maphong" Type="int" Nullable="false" />
+    <Property Name="iddv" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DiaDanh">
+    <Key>
+      <PropertyRef Name="idDiaDanh" />
+    </Key>
+    <Property Name="idDiaDanh" Type="int" Nullable="false" />
+    <Property Name="tendiadanh" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="dichvu">
+    <Key>
+      <PropertyRef Name="iddv" />
+    </Key>
+    <Property Name="iddv" Type="int" Nullable="false" />
+    <Property Name="tendichvu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="hoadon">
+    <Key>
+      <PropertyRef Name="mahd" />
+    </Key>
+    <Property Name="mahd" Type="int" Nullable="false" />
+    <Property Name="idkh" Type="int" />
+    <Property Name="maphong" Type="int" />
+  </EntityType>
+  <EntityType Name="khachhang">
+    <Key>
+      <PropertyRef Name="idkh" />
+    </Key>
+    <Property Name="idkh" Type="int" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="khachsan">
+    <Key>
+      <PropertyRef Name="idks" />
+    </Key>
+    <Property Name="idks" Type="int" Nullable="false" />
+    <Property Name="tenks" Type="nvarchar" MaxLength="50" />
+    <Property Name="loaihinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="makhuvuc" Type="int" />
+  </EntityType>
+  <EntityType Name="khuvuc">
+    <Key>
+      <PropertyRef Name="makhuvuc" />
+    </Key>
+    <Property Name="makhuvuc" Type="int" Nullable="false" />
+    <Property Name="tenkhuvuc" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="phong">
+    <Key>
+      <PropertyRef Name="maphong" />
+    </Key>
+    <Property Name="maphong" Type="int" Nullable="false" />
+    <Property Name="giuong" Type="int" />
+    <Property Name="gia" Type="int" />
+    <Property Name="trangthai" Type="bit" />
+    <Property Name="idks" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__DanhGia__idkh__5070F446">
+    <End Role="khachhang" Type="Self.khachhang" Multiplicity="0..1" />
+    <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khachhang">
+        <PropertyRef Name="idkh" />
+      </Principal>
+      <Dependent Role="DanhGia">
+        <PropertyRef Name="idkh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DanhGia__idks__5165187F">
+    <End Role="khachsan" Type="Self.khachsan" Multiplicity="0..1" />
+    <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khachsan">
+        <PropertyRef Name="idks" />
+      </Principal>
+      <Dependent Role="DanhGia">
+        <PropertyRef Name="idks" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DanhSachD__idDia__49C3F6B7">
+    <End Role="DiaDanh" Type="Self.DiaDanh" Multiplicity="1" />
+    <End Role="DanhSachDiaDanh" Type="Self.DanhSachDiaDanh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiaDanh">
+        <PropertyRef Name="idDiaDanh" />
+      </Principal>
+      <Dependent Role="DanhSachDiaDanh">
+        <PropertyRef Name="idDiaDanh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DanhSachD__mapho__4316F928">
+    <End Role="phong" Type="Self.phong" Multiplicity="1" />
+    <End Role="DanhSachDichVu" Type="Self.DanhSachDichVu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="phong">
+        <PropertyRef Name="maphong" />
+      </Principal>
+      <Dependent Role="DanhSachDichVu">
+        <PropertyRef Name="maphong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DanhSachDi__iddv__440B1D61">
+    <End Role="dichvu" Type="Self.dichvu" Multiplicity="1" />
+    <End Role="DanhSachDichVu" Type="Self.DanhSachDichVu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dichvu">
+        <PropertyRef Name="iddv" />
+      </Principal>
+      <Dependent Role="DanhSachDichVu">
+        <PropertyRef Name="iddv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DanhSachDi__idks__48CFD27E">
+    <End Role="khachsan" Type="Self.khachsan" Multiplicity="1" />
+    <End Role="DanhSachDiaDanh" Type="Self.DanhSachDiaDanh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khachsan">
+        <PropertyRef Name="idks" />
+      </Principal>
+      <Dependent Role="DanhSachDiaDanh">
+        <PropertyRef Name="idks" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__hoadon__idkh__4CA06362">
+    <End Role="khachhang" Type="Self.khachhang" Multiplicity="0..1" />
+    <End Role="hoadon" Type="Self.hoadon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khachhang">
+        <PropertyRef Name="idkh" />
+      </Principal>
+      <Dependent Role="hoadon">
+        <PropertyRef Name="idkh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__hoadon__maphong__4D94879B">
+    <End Role="phong" Type="Self.phong" Multiplicity="0..1" />
+    <End Role="hoadon" Type="Self.hoadon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="phong">
+        <PropertyRef Name="maphong" />
+      </Principal>
+      <Dependent Role="hoadon">
+        <PropertyRef Name="maphong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__khachsan__makhuv__3B75D760">
+    <End Role="khuvuc" Type="Self.khuvuc" Multiplicity="0..1" />
+    <End Role="khachsan" Type="Self.khachsan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khuvuc">
+        <PropertyRef Name="makhuvuc" />
+      </Principal>
+      <Dependent Role="khachsan">
+        <PropertyRef Name="makhuvuc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__phong__idks__403A8C7D">
+    <End Role="khachsan" Type="Self.khachsan" Multiplicity="0..1" />
+    <End Role="phong" Type="Self.phong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khachsan">
+        <PropertyRef Name="idks" />
+      </Principal>
+      <Dependent Role="phong">
+        <PropertyRef Name="idks" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLSVModelStoreContainer">
+    <EntitySet Name="DanhGia" EntityType="Self.DanhGia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhSachDiaDanh" EntityType="Self.DanhSachDiaDanh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DanhSachDichVu" EntityType="Self.DanhSachDichVu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DiaDanh" EntityType="Self.DiaDanh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dichvu" EntityType="Self.dichvu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hoadon" EntityType="Self.hoadon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="khachhang" EntityType="Self.khachhang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="khachsan" EntityType="Self.khachsan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="khuvuc" EntityType="Self.khuvuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="phong" EntityType="Self.phong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__DanhGia__idkh__5070F446" Association="Self.FK__DanhGia__idkh__5070F446">
+      <End Role="khachhang" EntitySet="khachhang" />
+      <End Role="DanhGia" EntitySet="DanhGia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DanhGia__idks__5165187F" Association="Self.FK__DanhGia__idks__5165187F">
+      <End Role="khachsan" EntitySet="khachsan" />
+      <End Role="DanhGia" EntitySet="DanhGia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DanhSachD__idDia__49C3F6B7" Association="Self.FK__DanhSachD__idDia__49C3F6B7">
+      <End Role="DiaDanh" EntitySet="DiaDanh" />
+      <End Role="DanhSachDiaDanh" EntitySet="DanhSachDiaDanh" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DanhSachD__mapho__4316F928" Association="Self.FK__DanhSachD__mapho__4316F928">
+      <End Role="phong" EntitySet="phong" />
+      <End Role="DanhSachDichVu" EntitySet="DanhSachDichVu" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DanhSachDi__iddv__440B1D61" Association="Self.FK__DanhSachDi__iddv__440B1D61">
+      <End Role="dichvu" EntitySet="dichvu" />
+      <End Role="DanhSachDichVu" EntitySet="DanhSachDichVu" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DanhSachDi__idks__48CFD27E" Association="Self.FK__DanhSachDi__idks__48CFD27E">
+      <End Role="khachsan" EntitySet="khachsan" />
+      <End Role="DanhSachDiaDanh" EntitySet="DanhSachDiaDanh" />
+    </AssociationSet>
+    <AssociationSet Name="FK__hoadon__idkh__4CA06362" Association="Self.FK__hoadon__idkh__4CA06362">
+      <End Role="khachhang" EntitySet="khachhang" />
+      <End Role="hoadon" EntitySet="hoadon" />
+    </AssociationSet>
+    <AssociationSet Name="FK__hoadon__maphong__4D94879B" Association="Self.FK__hoadon__maphong__4D94879B">
+      <End Role="phong" EntitySet="phong" />
+      <End Role="hoadon" EntitySet="hoadon" />
+    </AssociationSet>
+    <AssociationSet Name="FK__khachsan__makhuv__3B75D760" Association="Self.FK__khachsan__makhuv__3B75D760">
+      <End Role="khuvuc" EntitySet="khuvuc" />
+      <End Role="khachsan" EntitySet="khachsan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__phong__idks__403A8C7D" Association="Self.FK__phong__idks__403A8C7D">
+      <End Role="khachsan" EntitySet="khachsan" />
+      <End Role="phong" EntitySet="phong" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

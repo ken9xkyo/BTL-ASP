@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="QuanLy.master.cs" Inherits="BTLASP.QuanLy" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div style="margin-bottom :50px;margin-top:50px">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 ">
+                    <asp:HyperLink ID="HyperLink1" NavigateUrl="~/ThemKhachSan.aspx" runat="server">Thêm Khách Sạn</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server">Sửa Khách Sạn</asp:HyperLink>
+                </div>
+                <div class="col-xs-10 ">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
