@@ -35,6 +35,13 @@
                 </td>
                 <td style="height: 40px">
                     <asp:DropDownList ID="listSonguoi" runat="server" Height="30px" Width="326px">
+                        <asp:ListItem Value="1"></asp:ListItem>
+                        <asp:ListItem Value="2"></asp:ListItem>
+                        <asp:ListItem Value="3"></asp:ListItem>
+                        <asp:ListItem Value="4"></asp:ListItem>
+                        <asp:ListItem Value="5"></asp:ListItem>
+                        <asp:ListItem Value="6"></asp:ListItem>
+                        <asp:ListItem Value="7"></asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -43,8 +50,9 @@
                     <asp:Label ID="Label4" runat="server" Text="Loại Phòng :"></asp:Label>
                 </td>
                 <td style="height: 40px">
-                    <asp:DropDownList ID="listLoaiphong" runat="server" Height="22px" Width="326px">
+                    <asp:DropDownList ID="listLoaiphong" runat="server" Height="22px" Width="326px" DataSourceID="SqlDataSource1" DataTextField="LoaiPhong" DataValueField="LoaiPhong">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:QLKSConnectionString %>" SelectCommand="SELECT [LoaiPhong] FROM [Phong]"></asp:SqlDataSource>
                 </td>
             </tr>
             <tr>
@@ -53,6 +61,11 @@
                 </td>
                 <td style="height: 40px">
                     <asp:DropDownList ID="listSogiuong" runat="server" Height="24px" Width="324px">
+                        <asp:ListItem Value="1"></asp:ListItem>
+                        <asp:ListItem Value="2"></asp:ListItem>
+                        <asp:ListItem Value="3"></asp:ListItem>
+                        <asp:ListItem Value="4"></asp:ListItem>
+                        <asp:ListItem Value="5"></asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -69,8 +82,9 @@
                     <asp:Label ID="Label7" runat="server" Text="Tên Khách Sạn :"></asp:Label>
                 </td>
                 <td style="height: 40px">
-                    <asp:DropDownList ID="listKhachsan" runat="server" Height="29px" Width="322px">
+                    <asp:DropDownList ID="listKhachsan" runat="server" Height="29px" Width="322px" DataSourceID="SqlDataSource2" DataTextField="TenKhachSan" DataValueField="MaKhachSan">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:QLKSConnectionString %>" SelectCommand="SELECT [MaKhachSan], [TenKhachSan] FROM [KhachSan]"></asp:SqlDataSource>
                 </td>
             </tr>
             <tr>
