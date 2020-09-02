@@ -69,22 +69,6 @@ create table DanhSachDichVu(
 	foreign key (MaKhachSan) references KhachSan(MaKhachSan),
 	foreign key (MaTienNghi) references TienNghi(MaTienNghi)
 )
-
-
-create table HinhAnh(
-	MaHinhAnh int IDENTITY(1,1) NOT NULL primary key,
-	link varchar(50)
-)
-
-create table DanhSachAnh(
-	MaKhachSan int,
-	MaHinhAnh int,
-	primary key (MaKhachSan,MaHinhAnh),
-	foreign key (MaKhachSan) references KhachSan(MaKhachSan),
-	foreign key (MaHinhAnh) references HinhAnh(MaHinhAnh),
-
-
-)
 create table Phong
 (
 	MaPhong int IDENTITY(1,1) PRIMARY KEY,
@@ -101,6 +85,22 @@ create table Phong
 	foreign key (MaKhachSan) references KhachSan(MaKhachSan),
 
 )
+
+create table HinhAnh(
+	MaHinhAnh int IDENTITY(1,1) NOT NULL primary key,
+	link varchar(50)
+)
+
+create table DanhSachAnh(
+	MaPhong int,
+	MaHinhAnh int,
+	primary key (MaPhong,MaHinhAnh),
+	foreign key (MaPhong) references Phong(MaPhong),
+	foreign key (MaHinhAnh) references HinhAnh(MaHinhAnh),
+
+
+)
+
 
 create table KhachHang(
 	maKhachHang int IDENTITY(1,1) NOT NULL primary key,
